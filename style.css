@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 
-:root{
+:root {
     /* CORES */
     --body-color: #F0FFFF;
     --white-color: #FFFFFF;
@@ -12,7 +12,7 @@
 
     /* FONTES E TIPOGRAFIA */
     /* .5rem = 8px | 1rem = 16px... */
-    
+
     /* NAVBAR */
     --nav-size: 1.25rem;
     --nav-weight: 500;
@@ -22,7 +22,7 @@
     --heading-mobile-size: 2rem;
     --heading-weight: 800;
 
-    --subtitle-size: 1.5rem ;
+    --subtitle-size: 1.5rem;
     --subtitle-mobile-size: 1.25rem;
     --subtitle-weight: 600;
 
@@ -46,14 +46,14 @@
     --placeholder-weight: 500;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     outline: 0;
 }
 
-body{
+body {
     background-color: var(--body-color);
     font-family: "Raleway", sans-serif;
 }
@@ -61,25 +61,25 @@ body{
 
 
 /* <<<========== GLOBAL TEXTS ==========>>> */
-.heading{
+.heading {
     font-size: var(--heading-size);
     font-weight: var(--heading-weight);
     text-align: center;
 }
 
-.subtitle{
+.subtitle {
     font-size: var(--subtitle-size);
     font-weight: var(--subtitle-weight);
     text-align: center;
 }
 
-.text{
+.text {
     font-size: var(--text-size);
     font-weight: var(--text-weight);
     text-align: center;
 }
 
-.button{
+.button {
     background-color: var(--button-color);
     font-size: var(--button-size);
     font-weight: var(--button-weight);
@@ -89,36 +89,43 @@ body{
     border-radius: 10px;
     width: 280px;
     height: 70px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button:hover{
+    scale: 1.1;
 }
 
 
 
 /* <<<========== HEADER ==========>>> */
-.header{
+.header {
     background-color: var(--nav-color);
     height: 10vh;
     padding: 0px 10vw;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.logo{
+.logo {
     user-select: none;
 }
 
-.nav-navigation{
+.nav-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 7vw;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +133,7 @@ body{
     list-style: none;
 }
 
-.nav-list a{
+.nav-list a {
     text-decoration: none;
     font-size: var(--nav-size);
     font-weight: var(--nav-weight);
@@ -135,19 +142,19 @@ body{
     user-select: none;
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     gap: 1vw;
 }
 
-.nav-icons i{
+.nav-icons i {
     color: var(--white-color);
 }
 
 
 
 /* <<<========== HERO ==========>>> */
-.hero-container{
+.hero-container {
     height: calc(100vh - 8vh);
     padding: 0 10vw;
     display: flex;
@@ -155,7 +162,7 @@ body{
     align-items: center;
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,7 +170,7 @@ body{
     height: 100%;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,19 +178,95 @@ body{
     gap: 50px;
 }
 
-.hero-books{
+.hero-books {
     display: flex;
     align-items: center;
     gap: 1.5vw;
 }
 
-.hero-book{
+.hero-book {
     width: 200px;
     height: 282px;
     box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
+    user-select: none;
 }
 
-.primary-book{
+.primary-book {
     width: 240px;
     height: 360px;
+}
+
+
+
+/* <<<========== FEATURED ==========>>> */
+.featured-container{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    gap: 20px;
+}
+
+.card{
+    width: 280px;
+    height: 430px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 150px;
+    height: 200px;
+    box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-title{
+    height: 26px;
+    font-size: var(--book-title-size);
+    font-weight: var(--book-title-weight);
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Lora", serif;
+}
+
+.book-prices{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.old-price{
+    font-size: var(--old-price-size);
+    font-weight: var(--price-weight);
+    color: var(--opacity-text);
+    text-decoration: line-through;
+}
+
+.new-price{
+    font-size: var(--new-price-size);
+    font-weight: var(--price-weight);
+}
+
+.card button{
+    width: 220px;
+    min-height: 45px;
 }
