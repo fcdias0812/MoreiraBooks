@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+:root{
+    /* CORES */
+    --body-color: #F0FFFF;
+    --white-color: #FFFFFF;
+    --dark-color: #000000;
+    --nav-color: #86A788;
+    --button-color: #86A788;
+    --opacity-text: #A1A1A1;
+
+    /* FONTES E TIPOGRAFIA */
+    /* .5rem = 8px | 1rem = 16px... */
+    
+    /* NAVBAR */
+    --nav-size: 1.25rem;
+    --nav-weight: 600;
+
+    /* HEADING, SUBTITLE & TEXT */
+    --heading-size: 2.25rem;
+    --heading-mobile-size: 2rem;
+    --heading-weight: 800;
+
+    --subtitle-size: 1.5rem ;
+    --subtitle-mobile-size: 1.25rem;
+    --subtitle-weight: 600;
+
+    --text-size: 1.25rem;
+    --text-mobile-size: 1rem;
+    --text-weight: 500;
+
+    /* FEATURED */
+    --book-title-size: 1.25rem;
+    --book-title-weight: 600;
+    --old-price-size: 1rem;
+    --new-price-size: 1.25rem;
+    --price-weight: 500;
+
+    /* NEWSLETTER */
+    --placeholder-size: 1.25rem;
+    --placeholder-mobile-size: 1rem;
+    --placeholder-weight: 500;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
