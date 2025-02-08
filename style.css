@@ -15,7 +15,7 @@
     
     /* NAVBAR */
     --nav-size: 1.25rem;
-    --nav-weight: 600;
+    --nav-weight: 500;
 
     /* HEADING, SUBTITLE & TEXT */
     --heading-size: 2.25rem;
@@ -48,4 +48,59 @@
     padding: 0;
     margin: 0;
     outline: 0;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+/* HEADER */
+.header{
+    background-color: var(--nav-color);
+    height: 10vh;
+    padding: 0px 10vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    user-select: none;
+}
+
+.nav-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7vw;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-size: var(--nav-size);
+    font-weight: var(--nav-weight);
+    color: var(--white-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 1vw;
+}
+
+.nav-icons i{
+    color: var(--white-color);
 }
