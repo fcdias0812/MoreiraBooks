@@ -185,15 +185,15 @@ body {
 }
 
 .hero-book {
-    width: 200px;
-    height: 282px;
+    width: 12.5rem;
+    height: 17.625rem;
     box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
     user-select: none;
 }
 
 .primary-book {
-    width: 240px;
-    height: 360px;
+    width: 15rem;
+    height: 22.5rem;
 }
 
 
@@ -269,4 +269,52 @@ body {
 .card button{
     width: 220px;
     min-height: 45px;
+}
+
+
+
+/* <<<========== DISCOUNT ==========>>> */
+.discount-container{
+    padding: 0 10vw;
+}
+
+.discount{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-books{
+    position: relative;
+    height: 580px;
+    width: 60%;
+}
+
+.discount-book{
+    width: 18.75rem;
+    height: 28.125rem;
+    position: absolute;
+    box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-1{
+    top: 0;
+    left: 80px;
+    rotate: -15deg;
+}
+
+.book-2{
+    top: 80px;
+    left: 350px;
+    rotate: 15deg;
+}
+
+.discount-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
