@@ -30,6 +30,9 @@
     --text-mobile-size: 1rem;
     --text-weight: 500;
 
+    --button-size: 1.25rem;
+    --button-weight: 800;
+
     /* FEATURED */
     --book-title-size: 1.25rem;
     --book-title-weight: 600;
@@ -52,9 +55,45 @@
 
 body{
     background-color: var(--body-color);
+    font-family: "Raleway", sans-serif;
 }
 
-/* HEADER */
+
+
+/* <<<========== GLOBAL TEXTS ==========>>> */
+.heading{
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    text-align: center;
+}
+
+.subtitle{
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtitle-weight);
+    text-align: center;
+}
+
+.text{
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    text-align: center;
+}
+
+.button{
+    background-color: var(--button-color);
+    font-size: var(--button-size);
+    font-weight: var(--button-weight);
+    color: var(--white-color);
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    width: 280px;
+    height: 70px;
+}
+
+
+
+/* <<<========== HEADER ==========>>> */
 .header{
     background-color: var(--nav-color);
     height: 10vh;
@@ -103,4 +142,48 @@ body{
 
 .nav-icons i{
     color: var(--white-color);
+}
+
+
+
+/* <<<========== HERO ==========>>> */
+.hero-container{
+    height: calc(100vh - 8vh);
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vw;
+    height: 100%;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-books{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.hero-book{
+    width: 200px;
+    height: 282px;
+    box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary-book{
+    width: 240px;
+    height: 360px;
 }

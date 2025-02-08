@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <title>Moreira Books</title>
-</head>
-<body>
-    
-    <!-- HEADER -->
-     <header class="header">
-        <nav class="nav">
-            <img src="assets/logo.png" alt="Moreira Books Logo" class="logo">
+  </head>
+  <body>
+    <!-- <<<========== HEADER ==========>>> -->
+    <header class="header">
+      <nav class="nav">
+        <img src="assets/logo.png" alt="Moreira Books Logo" class="logo" />
 
-            <div class="nav-navigation">
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destaques</a></li>
-                    <li><a href="#">Descontos</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                </ul>
-    
-                <div class="nav-icons">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
-                    <a href="#"><i class="fa-regular fa-user fa-lg"></i></a>
-                </div>
+        <div class="nav-navigation">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Descontos</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+
+          <div class="nav-icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+            <a href="#"><i class="fa-regular fa-user fa-lg"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!-- <<<========== HERO ==========>>> -->
+    <section class="hero-container">
+      <div class="hero">
+        <div class="hero-content">
+            <div class="hero-heading">
+                <h1 class="heading">Um livro pode mudar tudo.</h1>
+                <h2 class="subtitle">Encontre o seu aqui!</h2>
             </div>
-        </nav>
-     </header>
+            <p class="text">Encontre os melhores livros, explore milhares de categorias e descubra histórias que vão transformar sua jornada.</p>
+            <button class="button">Explore Agora</button>
+        </div>
 
-     <script src="https://kit.fontawesome.com/7164ab732b.js" crossorigin="anonymous"></script>
+        <div class="hero-books">
+            <img src="assets/books/main/a outra face de deus.jpg" alt="Livro - A outra face de deus" class="hero-book">
+            <img src="assets/books/main/a selecao - a escolha.jpg" alt="Livro - A seleção - A escolha" class="hero-book primary-book">
+            <img src="assets/books/main/um amor para recordar.jpg" alt="Livro - Um amor para recordar" class="hero-book">
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/7164ab732b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
