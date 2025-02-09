@@ -58,6 +58,11 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 13vh;
+}
+
 
 
 /* <<<========== GLOBAL TEXTS ==========>>> */
@@ -101,10 +106,14 @@ body {
 
 
 /* <<<========== HEADER ==========>>> */
-.header {
+.header-container {
     background-color: var(--nav-color);
     height: 10vh;
     padding: 0px 10vw;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav {
@@ -114,9 +123,10 @@ body {
     height: 100%;
 }
 
-.logo {
+.nav-logo {
     user-select: none;
 }
+
 
 .nav-navigation {
     display: flex;
@@ -131,6 +141,10 @@ body {
     align-items: center;
     gap: 5vw;
     list-style: none;
+}
+
+.nav-list.active{
+    transform: translateX(0);
 }
 
 .nav-list a {
@@ -151,6 +165,11 @@ body {
     color: var(--white-color);
 }
 
+.mobile-menu{
+    color: var(--white-color);
+    display: none;
+    cursor: pointer;
+}
 
 
 /* <<<========== HERO ==========>>> */
@@ -178,24 +197,10 @@ body {
     gap: 50px;
 }
 
-.hero-books {
-    display: flex;
-    align-items: center;
-    gap: 1.5vw;
-}
-
-.hero-book {
-    width: 12.5rem;
-    height: 17.625rem;
-    box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
-    user-select: none;
-}
-
-.primary-book {
-    width: 15rem;
+.hero-books{
+    width: 44.5rem;
     height: 22.5rem;
 }
-
 
 
 /* <<<========== FEATURED ==========>>> */
@@ -287,27 +292,8 @@ body {
 
 .discount-books{
     position: relative;
-    height: 580px;
-    width: 60%;
-}
-
-.discount-book{
-    width: 18.75rem;
-    height: 28.125rem;
-    position: absolute;
-    box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-.book-1{
-    top: 0;
-    left: 80px;
-    rotate: -15deg;
-}
-
-.book-2{
-    top: 80px;
-    left: 350px;
-    rotate: 15deg;
+    height: 36.25rem;
+    width: 42.875rem;
 }
 
 .discount-content{
@@ -427,7 +413,6 @@ body {
 
 .footer-links a{
     font-size: var(--text-size);
-    /* font-weight: var(--text-weight); */
     text-decoration: none;
     color: var(--black-color);
     cursor: pointer;
@@ -452,4 +437,138 @@ body {
 
 .directs-container span{
     font-weight: 600;
+}
+
+
+
+/* <<<========== MEDIA QUERIES ==========>>> */
+@media(min-width: 1440px){
+    .nav, .hero, .featured, .discount, .newsletter, .footer{
+        max-width: 1440px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1450px){
+    .discount{
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 1251px){
+    .mobile-menu{
+        display: none !important;
+    }
+}
+
+@media(max-width: 1250px){
+    .nav{
+        overflow-x: hidden;
+    }
+
+    .nav-navigation{
+        gap: 20px;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 90vh;
+        background-color: var(--nav-color);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .mobile-menu{
+        display: block;
+        padding: 15px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .hero-content{
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .featured{
+        margin-top: 200px;
+    }
+
+    .cards-container{
+        grid-template-columns: 280px 280px 280px;
+    }
+    .discount-content{
+        width: 80%;
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .newsletter-content{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1024px){
+    .nav-icons{
+        gap: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+@media(max-width: 950px){
+    .cards-container{
+        grid-template-columns: 280px 280px;
+    }
+}
+
+@media(max-width: 768px){
+    .hero-books, .discount-books{
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content, .discount-container, .newsletter-content{
+        width: 100%;
+    }
+
+    .footer-links{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    .header-container, .hero-container, .featured-container, .discount-container, .newsletter-container{
+        padding: 0 2vw;
+    }
+
+    .footer-container{
+        padding: 50px 2vw
+    }
+
+    .cards-container{
+        grid-template-columns: 280px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 425px){
+    .nav-logo{
+        width: 50%;
+    }
 }

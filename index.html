@@ -9,28 +9,31 @@
   </head>
   <body>
     <!-- <<<========== HEADER ==========>>> -->
-    <header class="header">
+    <header class="header-container">
       <nav class="nav">
-        <img src="assets/logo-white.png" alt="Moreira Books Logo" class="logo" />
+        <img src="assets/logo-white.png" alt="Moreira Books Logo" class="nav-logo" />
 
         <div class="nav-navigation">
           <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destaques</a></li>
-            <li><a href="#">Descontos</a></li>
-            <li><a href="#">Newsletter</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#featured">Destaques</a></li>
+            <li><a href="#discount">Descontos</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
           </ul>
 
           <div class="nav-icons">
             <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
             <a href="#"><i class="fa-regular fa-user fa-lg"></i></a>
           </div>
+
+            <i class="fa-solid fa-bars fa-xl mobile-menu"></i>
         </div>
+
       </nav>
     </header>
 
     <!-- <<<========== HERO ==========>>> -->
-    <section class="hero-container">
+    <section id="hero" class="hero-container">
       <div class="hero">
         <div class="hero-content">
           <div class="hero-heading">
@@ -44,28 +47,12 @@
           <button class="button">Explore Agora</button>
         </div>
 
-        <div class="hero-books">
-          <img
-            src="assets/books/main/a outra face de deus.jpg"
-            alt="Livro - A outra face de deus"
-            class="hero-book"
-          />
-          <img
-            src="assets/books/main/a selecao - a escolha.jpg"
-            alt="Livro - A seleção - A escolha"
-            class="hero-book primary-book"
-          />
-          <img
-            src="assets/books/main/um amor para recordar.jpg"
-            alt="Livro - Um amor para recordar"
-            class="hero-book"
-          />
-        </div>
+        <img src="assets/hero-books.png" alt="Livros da sessão hero" class="hero-books">
       </div>
     </section>
 
     <!-- <<<========== FEATURED ==========>>> -->
-    <section class="featured-container">
+    <section id="featured" class="featured-container">
         <div class="featured">
             <h1 class="heading">Destaques da Semana</h1>
 
@@ -183,12 +170,9 @@
     </section>
 
     <!-- <<<========== DISCOUNT ==========>>> -->
-     <section class="discount-container">
+     <section id="discount" class="discount-container">
         <div class="discount">
-            <div class="discount-books">
-                <img src="assets/books/discount/orgulho e preconceito.jpg" alt="Livro - Orgulho e preconceito" class="discount-book book-1">
-                <img src="assets/books/discount/orgulho e preconceito.jpg" alt="Livro - Orgulho e preconceito" class="discount-book book-2">
-            </div>
+            <img src="assets/discount-books.png" alt="Livros com disconto" class="discount-books">
             <div class="discount-content">
                 <h1 class="heading">Leitura incrível por um preço especial!</h1>
                 <p class="text">Esta semana, um desconto imperdível para você. Não perca a chance de garantir sua próxima grande história por um valor exclusivo!</p>
@@ -198,7 +182,7 @@
      </section>
 
      <!-- <<<========== NEWSLETTER ==========>>> -->
-      <section class="newsletter-container">
+      <section id="newsletter" class="newsletter-container">
         <div class="newsletter">
             <div class="newsletter-content">
                 <div>
