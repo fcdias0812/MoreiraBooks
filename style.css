@@ -5,7 +5,7 @@
     /* CORES */
     --body-color: #F0FFFF;
     --white-color: #FFFFFF;
-    --dark-color: #000000;
+    --black-color: #000000;
     --nav-color: #86A788;
     --button-color: #86A788;
     --opacity-text: #A1A1A1;
@@ -275,11 +275,11 @@ body {
 
 /* <<<========== DISCOUNT ==========>>> */
 .discount-container{
+    margin-top: 200px;
     padding: 0 10vw;
 }
 
 .discount{
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,11 +323,11 @@ body {
 
 /* <<<========== NEWSLETTER ==========>>> */
 .newsletter-container{
+    margin-top: 200px;
     padding: 0 10vw;
 }
 
 .newsletter{
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,4 +370,86 @@ body {
 .newsletter-form button{
     width: 100%;
     height: 60px;
+}
+
+
+
+/* <<<========== FOOTER ==========>>> */
+.footer-container{
+    margin-top: 200px;
+    padding: 50px 10vw;
+    background-color: var(--white-color);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-shop{
+    width: 280px;
+}
+
+.footer-shop .text{
+    text-align: left;
+}
+
+.footer-links{
+    display: flex;
+    gap: 100px;
+}
+
+.fast-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fast-links .subtitle{
+    text-align: left;
+}
+
+.support-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links a{
+    font-size: var(--text-size);
+    /* font-weight: var(--text-weight); */
+    text-decoration: none;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 40px;
+}
+
+.social-icons a{
+    color: var(--black-color);
+}
+
+.directs-container span{
+    font-weight: 600;
 }
